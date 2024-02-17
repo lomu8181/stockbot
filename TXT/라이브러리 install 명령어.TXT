@@ -1,0 +1,11 @@
+import yaml
+pip install pyyaml
+
+import yfinance
+pip3 install yfinance
+
+import pandas_datareader.data
+pip3 install pandas_datareader
+
+import FinanceDataReader
+pip install -U finance-datareader
