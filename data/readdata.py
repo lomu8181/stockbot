@@ -1,7 +1,6 @@
 import time
 import json
 import os
-import pprint
 from pykrx import stock
 import pandas as pd
 import FinanceDataReader as fdr
@@ -50,7 +49,7 @@ for value in tk_ALL:
     stock_info.index = stock_info.index.strftime('%Y-%m-%d')  # 인덱스를 문자열로 변환
     with open(f'data/TK/{value}.json', 'w') as f:
         json.dump(stock_info.to_dict(), f)
-    print(tk_ALL.index(value),'/', len(tk_ALL),f'({value})')
+    print(tk_ALL.index(value) + 1,'/', len(tk_ALL),f'({value})')
 
 
 print('#########################################################################################')
